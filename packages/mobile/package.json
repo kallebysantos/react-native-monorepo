@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@monorepo/shared": "*",
     "react": "18.2.0",
     "react-native": "0.71.8"
   },
