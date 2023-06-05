@@ -12,6 +12,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import { HelloWorld } from '@monorepo/shared/components/HelloWorld';
+import { Counter } from '@monorepo/shared/components/Counter';
+
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -28,9 +30,13 @@ function App(): JSX.Element {
       />
 
       <View style={{ flex: 1 }}>
-        <Text style={{ fontSize: 20, color: 'black' }}>Hello from mobile app</Text>
+        <Text style={{ fontSize: 20, color: 'black' }}>
+          Hello from mobile app!
+        </Text>
 
         <HelloWorld />
+
+        <Counter />
 
       </View>
     </SafeAreaView>

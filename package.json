@@ -8,5 +8,9 @@
     "packages": [
       "packages/*"
     ]
+  },
+  "scripts": {
+    "dev:mobile": "yarn workspace mobile start",
+    "dev:web": "yarn workspace @monorepo/web dev"
   }
 }
