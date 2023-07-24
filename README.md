@@ -1,5 +1,8 @@
 # React + Native - Monorepo Guide
 
+![ React + Native - Monorepo Apps](https://github.com/kallebysantos/react-native-monorepo/assets/105971119/f7816ab2-4c54-4cd9-92d4-65ca6242c78a)
+
+
 > Monorepos, or "monolithic repositories", are single repositories 
 containing multiple apps or packages. It can help speed up 
 development for larger projects, make it easier to share code, 
