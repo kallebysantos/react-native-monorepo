@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Platform,
   SafeAreaView,
   StatusBar,
   Text,
@@ -28,7 +29,9 @@ function App(): JSX.Element {
       />
 
       <View style={{ flex: 1 }}>
-        <Text style={{ fontSize: 20, color: 'black' }}>Hello from mobile app</Text>
+        <Text style={{ fontSize: 20, color: 'black' }}>
+          Hello from mobile app ({Platform.OS})
+        </Text>
 
         <HelloWorld />
 
