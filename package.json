@@ -1,0 +1,22 @@
+{
+  "name": "monoapp",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.72.3",
+    "react-native-web": "^0.19.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@types/react-native": "^0.72.2",
+    "typescript": "^5.0.4",
+    "eslint": "^8.45.0"
+  }
+}
