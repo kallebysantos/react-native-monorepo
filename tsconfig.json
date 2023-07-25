@@ -11,9 +11,9 @@
     "allowImportingTsExtensions": true,
 
     /* Linting */
+    "noResolve": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
   },
-  "include": ["./custom.d.ts"],
 }

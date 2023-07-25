@@ -7,6 +7,4 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-  content: ['./components/**/*.{js,ts,jsx,tsx}'],
 };

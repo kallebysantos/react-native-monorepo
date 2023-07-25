@@ -4,5 +4,9 @@ module.exports = {
   theme: {
     extend: {},
   },
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    '../../packages/shared/**/*.{js,ts,jsx,tsx}',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
+  plugins: [require('nativewind/tailwind/native')],
 };

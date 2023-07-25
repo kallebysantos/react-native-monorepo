@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  presets: [require('@monoapp/shared/tailwind.config')],
+  presets: [require('@monoapp/shared/tailwind.config.js')],
   theme: {
     extend: {
       colors: {
@@ -8,6 +8,12 @@ module.exports = {
       },
     },
   },
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  plugins: [require('@tailwindcss/typography')],
+  content: [
+    '../../packages/shared/**/*.{js,ts,jsx,tsx}',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('nativewind/tailwind/css'),
+  ],
 };

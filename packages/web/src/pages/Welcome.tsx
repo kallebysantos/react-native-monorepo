@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import reactLogo from '../assets/react.svg';
 import viteLogo from '../assets/vite.svg';
 
-import {HelloWorld} from '@monoapp/shared/components/HelloWorld';
+import {HelloWorld} from '@monoapp/shared/src/components/HelloWorld';
 
 export function Welcome() {
   const [count, setCount] = useState(0);
