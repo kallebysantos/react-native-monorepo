@@ -1,12 +1,5 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import type { PropsWithChildren } from 'react';
+import type {PropsWithChildren} from 'react';
 import {
   Platform,
   SafeAreaView,
@@ -21,18 +14,17 @@ import {
 import {
   Colors,
   DebugInstructions,
-  Header,
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import { HelloWorld } from '@monoapp/shared/components/HelloWorld'
+import {HelloWorld} from '@monoapp/shared/components/HelloWorld';
 
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
 
-function Section({ children, title }: SectionProps): JSX.Element {
+function Section({children, title}: SectionProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -74,17 +66,8 @@ function App(): JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-
-
-
         <View>
-          <Text
-            style={{
-              fontSize: 42,
-              color: '#000',
-              textAlign: 'center',
-              fontWeight: 'bold'
-            }}>
+          <Text style={styles.title}>
             Welcome to React Native on {Platform.OS}
           </Text>
         </View>
@@ -116,6 +99,12 @@ function App(): JSX.Element {
 }
 
 const styles = StyleSheet.create({
+  title: {
+    fontSize: 42,
+    color: '#000',
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,

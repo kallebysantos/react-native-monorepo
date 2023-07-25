@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
-const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
+const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
 
 /**
  * Metro configuration
@@ -11,7 +12,7 @@ const config = {
   projectRoot: path.resolve(__dirname, '.'),
   watchFolders: [
     path.resolve(__dirname, '../../node_modules'),
-    path.resolve(__dirname, '../../packages')
+    path.resolve(__dirname, '../../packages'),
   ],
   transformer: {
     getTransformOptions: async () => ({

@@ -1,12 +1,15 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React from 'react';
+import {View, Text, StyleSheet} from 'react-native';
 
 export function HelloWorld() {
   return (
-    <View style={{ backgroundColor: 'blue' }}>
-      <Text style={{ color: 'white', fontSize: 28 }}>
-        Hello from Shared HelloWorld!
-      </Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>Hello from Shared HelloWorld!</Text>
     </View>
-  )
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {backgroundColor: 'blue'},
+  title: {color: 'white', fontSize: 28},
+});

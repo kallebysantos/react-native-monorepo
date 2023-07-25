@@ -1,7 +1,11 @@
+/**
+ * @type {import('eslint').Linter.BaseConfig}
+ */
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   extends: [
+    '@react-native',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
