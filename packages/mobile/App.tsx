@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Platform,
   SafeAreaView,
   StatusBar,
   Text,
@@ -7,13 +8,10 @@ import {
   useColorScheme,
 } from 'react-native';
 
-import {
-  Colors,
-} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-import { HelloWorld } from '@monorepo/shared/components/HelloWorld';
-import { Counter } from '@monorepo/shared/components/Counter';
-
+import {HelloWorld} from '@monorepo/shared/components/HelloWorld';
+import {Counter} from '@monorepo/shared/components/Counter';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -23,21 +21,20 @@ function App(): JSX.Element {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, ...backgroundStyle }}>
+    <SafeAreaView style={{flex: 1, ...backgroundStyle}}>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
 
-      <View style={{ flex: 1 }}>
-        <Text style={{ fontSize: 20, color: 'black' }}>
-          Hello from mobile app!
+      <View style={{flex: 1}}>
+        <Text style={{fontSize: 20, color: 'black'}}>
+          Hello from mobile app ({Platform.OS})
         </Text>
 
         <HelloWorld />
 
         <Counter />
-
       </View>
     </SafeAreaView>
   );
