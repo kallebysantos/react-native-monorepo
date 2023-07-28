@@ -54,11 +54,4 @@
       </ResolvedFileToPublish>
     </ItemGroup>
   </Target>
-
-    <!-- <ItemGroup> 
-      <Content Include="$(SpaRoot)dist\**"> 
-        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory> 
-      </Content> 
-    </ItemGroup>
-  </Target> -->
 </Project>

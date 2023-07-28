@@ -1,11 +1,19 @@
-import React, {useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import reactLogo from '../assets/react.svg';
 import viteLogo from '../assets/vite.svg';
 
-import {HelloWorld} from '@monoapp/shared/src/components/HelloWorld';
+import { HelloWorld } from '@monoapp/shared/src/components/HelloWorld';
 
 export function Welcome() {
   const [count, setCount] = useState(0);
+  const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    fetch('/api/hello')
+      .then(r => r.json())
+      .then(r => setMessage(r))
+      .catch(console.error);
+  }, []);
 
   return (
     <main className="flex flex-col gap-12">
@@ -33,6 +41,12 @@ export function Welcome() {
 
         <p className="prose text-midnight bg-bubble-gum p-1">
           Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+
+        <p className="prose">
+          <code>
+            {JSON.stringify(message)}
+          </code>
         </p>
 
         <p className="text-indigo-600">
