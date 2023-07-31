@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 
 import {HelloWorld} from '@monoapp/shared/src/components/HelloWorld';
+import {PlatformComponent} from '@monoapp/shared/src/components/PlatformComponent';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -26,6 +27,8 @@ function App(): JSX.Element {
 
         <View>
           <HelloWorld />
+
+          <PlatformComponent />
 
           <View className="mt-8 px-6">
             <Text className="text-gray-800">Step One</Text>

@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import reactLogo from '../assets/react.svg';
 import viteLogo from '../assets/vite.svg';
 
-import { HelloWorld } from '@monoapp/shared/src/components/HelloWorld';
+import {HelloWorld} from '@monoapp/shared/src/components/HelloWorld';
+import {PlatformComponent} from '@monoapp/shared/src/components/PlatformComponent';
 
 export function Welcome() {
   const [count, setCount] = useState(0);
@@ -18,6 +19,8 @@ export function Welcome() {
   return (
     <main className="flex flex-col gap-12">
       <HelloWorld />
+
+      <PlatformComponent />
 
       <div className="flex w-full items-center justify-center gap-12">
         <a className="h-24 w-24" href="https://vitejs.dev" target="_blank">
@@ -44,9 +47,7 @@ export function Welcome() {
         </p>
 
         <p className="prose">
-          <code>
-            {JSON.stringify(message)}
-          </code>
+          <code>{JSON.stringify(message)}</code>
         </p>
 
         <p className="text-indigo-600">

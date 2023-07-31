@@ -5,6 +5,7 @@ import {
   Image as RNImage,
   TextInput as RNTextInput,
   ScrollView as RNScrollView,
+  PlatformOSType,
 } from 'react-native';
 
 export const View = styled(RNView);
@@ -12,3 +13,7 @@ export const Text = styled(RNText);
 export const Image = styled(RNImage);
 export const TextInput = styled(RNTextInput);
 export const ScrollView = styled(RNScrollView);
+
+export type NativePlatformComponent = {
+  [Property in PlatformOSType]: () => JSX.Element;
+};
